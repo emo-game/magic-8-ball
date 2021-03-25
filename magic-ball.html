@@ -15,6 +15,11 @@
         </style>
 
     <script>
+        if (typeof DeviceMotionEvent.requestPermission === 'function') {
+  // iOS 13+
+} else {
+  // non iOS 13+
+}
    DeviceMotionEvent.requestPermission()
 .then(response => {
   if (response == 'granted') {

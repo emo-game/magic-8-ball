@@ -20,6 +20,7 @@
 } else {
   // non iOS 13+
 }
+function getAccel(){
    DeviceMotionEvent.requestPermission()
 .then(response => {
   if (response == 'granted') {
@@ -29,6 +30,8 @@
   }
 })
 .catch(console.error)
+}
+
     </script>
     </head>
     <body style="background-color:lightblue;">

@@ -15,7 +15,7 @@
         </style>
 
     <script>
-     function onTouch() {
+     function getAccel() {
     // feature detect
     if (typeof DeviceMotionEvent.requestPermission === 'function') {
       DeviceMotionEvent.requestPermission()
@@ -35,5 +35,7 @@
     </head>
     <body style="background-color:lightblue;">
         <div class="indicatorDot" style="left:30%; top:30%;"></div>
+        <button id="accelPermsButton"  style="height:50px;" onclick="getAccel()"><h1>Get Accelerometer Permissions</h1></button>        
+
     </body>
 </html>

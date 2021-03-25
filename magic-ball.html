@@ -1,26 +1,32 @@
 <!DOCTYPE html>
-<html lang="fr" dir="ltr">
-<head>
-    <meta charset="UTF-8">
-    <title>magic ball</title>
-    <!-- <link rel="stylesheet" href="magic-ball.css" />  -->
-<script src="script.js"  charset="utf-8"></script>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Accelerometer Demo</title>
 
-</head>
+        <style>
+        .indicatorDot{
+            width: 30px;
+            height: 30px;
+            background-color: #ffab56;
+            border-radius: 50%;
+            position:fixed;
+        }
+        </style>
 
-
-
-
-    <body>
-        <div class="header">
-            <h1>waouuuuh</h1>
-           <img src="./img/Insaissables-bitmap.png" width="30%" height="30%">
-
-           <button id="accelPermsButton"  style="height:50px;" onclick="getAccel()"><h1>Get Accelerometer Permissions</h1></button>        
-        </div>
-
-        
-
+    <script>
+    function getAccel(){
+        DeviceMotionEvent.requestPermission().then(response => {
+            if (response == 'granted') {
+                console.log("accelerometer permission granted");
+                // Do stuff here
+            }
+        });
+    }
+    </script>
+    </head>
+    <body style="background-color:lightblue;">
+        <button id="accelPermsButton"  style="height:50px;" onclick="getAccel()"><h1>Get Accelerometer Permissions</h1></button>
+        <div class="indicatorDot" style="left:30%; top:30%;"></div>
     </body>
-    
 </html>

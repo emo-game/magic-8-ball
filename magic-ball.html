@@ -16,7 +16,7 @@
 
     <script>
      function getAccel(){
-        .then(response => {
+        then(response => {
   if (response == 'granted') {
     window.addEventListener('devicemotion', (e) => {
       // do something with e
@@ -24,7 +24,7 @@
   }
 })
 .catch(console.error)
-
+     }
 
     </script>
     </head>
@@ -33,4 +33,5 @@
         <button id="accelPermsButton"  style="height:50px;" onclick="getAccel()"><h1>Get Accelerometer Permissions</h1></button>        
 
     </body>
+
 </html>

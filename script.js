@@ -26,16 +26,23 @@ function nextSeq () {
     }
 }
 
-//function to call when shake occurs
-if (shake > 30){
-function shakeEventDidOccur () {
 
-console.log("c bon bg")
+
+
+//function to call when shake occurs
+
+function shakeEventDidOccur () {
+    var shakeEvent = new Shake({threshold: 15});
+    shakeEvent.start();
+    window.addEventListener('shake', function(){
+        console.log("c bon bg");
+    }, false);
+
 
     }
 }
   
 
     alert('shake!');
-}
+
 

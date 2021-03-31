@@ -24,6 +24,7 @@ function nextSeq () {
     if (CURRENT_SEQ) {
       CURRENT_SEQ.remove()
     }
+}
 
 //function to call when shake occurs
 function shakeEventDidOccur () {

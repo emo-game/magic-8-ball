@@ -41,3 +41,6 @@ function shakeEventDidOccur () {
     alert('shake!');
 }
 
+window.removeEventListener('shake', shakeEventDidOccur, false);
+
+myShakeEvent.stop();

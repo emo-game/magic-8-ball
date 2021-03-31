@@ -58,7 +58,7 @@ window.removeEventListener('shake', shakeEventDidOccur, false);
 
 myShakeEvent.stop();
 
-
+}
 
 
 
@@ -121,4 +121,4 @@ myShakeEvent.stop();
 //     demo_button.classList.add('btn-danger');
 //     is_running = true;
 //   }
-// };
+// 

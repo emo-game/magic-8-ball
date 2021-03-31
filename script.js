@@ -27,15 +27,13 @@ function nextSeq () {
 }
 
 //function to call when shake occurs
+if (shake > 30){
 function shakeEventDidOccur () {
 
-    //put your own code here etc.
-if ( myShakeEvent > 10) {
-            console.log("c bon bg")
-        }     
-        //changer l'image
-    }
+console.log("c bon bg")
 
+    }
+}
   
 
     alert('shake!');

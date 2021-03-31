@@ -1,6 +1,14 @@
 
 let CURRENT_SEQ = null
 
+function Shake(options) {
+    //feature detect
+    this.hasDeviceMotion = 'ondevicemotion' in window;
+
+    this.options = {
+        threshold: 15, //default velocity threshold for shake to register
+        timeout: 1000 //default interval between events
+    };
   
 
 var myShakeEvent = new Shake({

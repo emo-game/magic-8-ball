@@ -31,17 +31,8 @@ function shakeEventDidOccur () {
 
     //put your own code here etc.
 
-        if (lastX > 30) {
             console.log("c bon bg")
-            function imageFun() {
-                var Image_Id = document.getElementById('getImage');
-                if (Image_Id.src.match("./img/Insaissables-bitmap.png")) {
-                    Image_Id.src = "./img/Insaissables.jpg";
-                }
-                else {
-                    Image_Id.src = "./img/Insaissables-bitmap.png";
-                }
-            }  
+             
         //changer l'image
     }
 

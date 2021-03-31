@@ -35,7 +35,7 @@ function shakeEventDidOccur () {
     var shakeEvent = new Shake({threshold: 15});
     shakeEvent.start();
     window.addEventListener('shake', function(){
-        console.log("c bon bg");
+        alert("c bon bg");
     }, false);
 
 

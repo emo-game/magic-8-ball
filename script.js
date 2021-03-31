@@ -30,9 +30,9 @@ function nextSeq () {
 function shakeEventDidOccur () {
 
     //put your own code here etc.
-
+if ( myShakeEvent > 10) {
             console.log("c bon bg")
-             
+        }     
         //changer l'image
     }
 

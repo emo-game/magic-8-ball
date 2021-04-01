@@ -85,7 +85,7 @@ function draw(){
         }
 
         shaked = false;
-        //dispo = true;
+        dispo = true;
     }       
 
     

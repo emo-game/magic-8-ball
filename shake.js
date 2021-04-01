@@ -15,7 +15,7 @@
         global.Shake = factory(global, global.document);
     }
 } (typeof window !== 'undefined' ? window : this, function (window, document) {
-
+    
     'use strict';
 
     function Shake(options) {
@@ -46,7 +46,7 @@
         //create custom event
         if (typeof document.CustomEvent === 'function') {
             this.event = new document.CustomEvent('shake', {
-                bubbles: true,
+                bubbles: true, 
                 cancelable: true
             });
         } else if (typeof document.createEvent === 'function') {

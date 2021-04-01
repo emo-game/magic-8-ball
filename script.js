@@ -11,6 +11,7 @@ function Shake(options) {
     };
   
 
+}
 var myShakeEvent = new Shake({
     threshold: 15, // optional shake strength threshold
     timeout: 1000 // optional, determines the frequency of event generation
@@ -32,17 +33,9 @@ function nextSeq () {
 //function to call when shake occurs
 
 function shakeEventDidOccur () {
-    var shakeEvent = new Shake({threshold: 15});
-    shakeEvent.start();
-    window.addEventListener('shake', function(){
-        alert("c bon bg");
-    }, false);
-
-
-    }
-}
+   
   
 
-    alert('shake!');
+    console.log("shake ya booty man!");
 
-
+}

@@ -4,7 +4,7 @@ var dispo; //shake disponible
 var shaked;
 var imgIndex;
 var nombreImages = 2;
-let androide, naif;
+let androide, naif, sorciere;
 
 function setup(){
   x = accelerationX;
@@ -18,6 +18,7 @@ function setup(){
 
   androide = select("#androide");
   naif = select("#naif");
+  sorciere = select("#sorciere");
   console.log(androide);
   console.log(naif);
 
@@ -42,26 +43,29 @@ function draw(){
             console.log("naif visible");
             naif.style('visibility', 'visible');
 
-        }
+        
+
+    } else if (imgIndex == 3){
+        console.log("sorciere visible");
+        sorciere.style('visibility', 'visible');
+
+    }
+}
 
         shaked = false;
         dispo = true;
     }       
 
-    
 
+// function mouseClicked(){
 
-}
+//     if(dispo == true){
+//         shaked = true;
+//         dispo = false;
+//         console.log("click ! ta mère dans un clic clac");
+//     }
 
-function mouseClicked(){
-
-    if(dispo == true){
-        shaked = true;
-        dispo = false;
-        console.log("click ! ta mère dans un clic clac");
-    }
-
-}
+// }
 
 
 function shakeTrue() {

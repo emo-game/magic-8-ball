@@ -20,12 +20,7 @@ var myShakeEvent = new Shake({
 myShakeEvent.start();
 
 window.addEventListener('shake', shakeEventDidOccur, false);
-document.addEventListener('click', () => nextSeq()) // DEBUG
-function nextSeq () {
-    if (CURRENT_SEQ) {
-      CURRENT_SEQ.remove()
-    }
-}
+
 
 
 

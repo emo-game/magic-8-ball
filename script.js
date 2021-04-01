@@ -37,12 +37,15 @@
 
 var x, y, z;
 var px, py, pz; // p = precedent
-var dispo = true;
-var shaked = false;
+var dispo;
+var shaked;
+var imgIndex;
+var nombreImages = 2;
+let androide, naif;
 
 function setup(){
-    let div = createDiv('./img/Insaissables-bitmap.png');
-    div.id('seq-img')
+    //let div = createDiv('./img/Insaissables-bitmap.png');
+    //div.id('seq-img')
     //createCanvas(windowWidth, windowHeight, WEBGL);
   x = accelerationX;
   y = accelerationY;
@@ -50,23 +53,54 @@ function setup(){
   px = x;
   py = y;
   pz = z;
-  
+  dispo = true;
+  shaked = false;
+
+  androide = select("#androide");
+  naif = select("#naif");
+  console.log(androide);
+  console.log(naif);
+
 }
 
 function draw(){
+
     shakeTrue();
+
     if(shaked == true){
         // il se passe un tas de choses géniales
-    let img = createImg('./img/Insaissables-bitmap.png');
-    img.position(0, -10);
-    //changer l'image
-}
+        
+        console.log("the shaking occured!");
+        imgIndex = floor(random(nombreImages));
+
+        if (imgIndex == 0){
+            console.log("androide visible");
+            androide.style('visibility', 'visible');
+            
+        } else if (imgIndex == 1){
+            console.log("naif visible");
+            naif.style('visibility', 'visible');
+
+        }
+
         shaked = false;
         dispo = true;
+    }       
+
+    
 
 
+}
+
+function mouseClicked(){
+
+    if(dispo == true){
+        shaked = true;
+        dispo = false;
+        console.log("click ! ta mère dans un clic clac");
     }
 
+}
 
 
 function shakeTrue() {

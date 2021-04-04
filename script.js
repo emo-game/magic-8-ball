@@ -49,7 +49,7 @@ function draw(){
 
         
 
-    } else if (imgIndex == 3){
+    } else if (imgIndex == 2){
         androide.style('visibility', 'hidden');
         naif.style('visibility', 'hidden');
         console.log("sorciere visible");

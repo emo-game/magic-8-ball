@@ -36,7 +36,7 @@ function draw(){
         imgIndex = 0;
 
         if (imgIndex == 0){
-            naif.style('visibility', 'visible');
+            naif.style('visibility', 'hidden');
             sorciere.style('visibility', 'hidden');
             console.log("androide visible");
             androide.style('visibility', 'visible');

@@ -21,6 +21,7 @@ function setup(){
   sorciere = select("#sorciere");
   console.log(androide);
   console.log(naif);
+  console.log(sorciere)
 
 }
 

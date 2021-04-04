@@ -33,7 +33,7 @@ function draw(){
         
         console.log("the shaking occured!");
         imgIndex = floor(random(nombreImages));
-        imgIndex = 0;
+        //imgIndex = 0;
 
         if (imgIndex == 0){
             naif.style('visibility', 'hidden');

@@ -64,16 +64,16 @@ function draw(){
         
     }       
 
-//DEBUG
-// function mouseClicked(){
+DEBUG
+function mouseClicked(){
 
-//     if(dispo == true){
-//         shaked = true;
-//         dispo = false;
-//         console.log("click ! ta mère dans un clic clac");
-//     }
+    if(dispo == true){
+        shaked = true;
+        dispo = false;
+        console.log("click ! ta mère dans un clic clac");
+    }
 
-// }
+}
 
 
 function shakeTrue() {

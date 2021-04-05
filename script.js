@@ -50,14 +50,14 @@ function draw(){
 
         
 
-    } else if (imgIndex == 2){
-        androide.style('visibility', 'hidden');
-        naif.style('visibility', 'hidden');
-        console.log("sorciere visible");
-        sorciere.style('visibility', 'visible');
+        } else if (imgIndex == 2){
+            androide.style('visibility', 'hidden');
+            naif.style('visibility', 'hidden');
+            console.log("sorciere visible");
+            sorciere.style('visibility', 'visible');
 
+        }
     }
-}
 
         shaked = false;
         dispo = true;
@@ -83,7 +83,7 @@ function shakeTrue() {
     
     //console.log(dist(x, y, z, px, py, pz));
 
-    if(dist(x, y, z, px, py, pz) > 30 && dispo == true){
+    if(dist(x, y, z, px, py, pz) > 60 && dispo == true){
         console.log("shake it shake it up");
         shaked = true;
         dispo = false;

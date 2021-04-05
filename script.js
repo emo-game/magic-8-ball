@@ -83,7 +83,7 @@ function shakeTrue() {
     
     //console.log(dist(x, y, z, px, py, pz));
 
-    if(dist(x, y, z, px, py, pz) > 60 && dispo == true){
+    if(dist(x, y, z, px, py, pz) > 40 && dispo == true){
         console.log("shake it shake it up");
         shaked = true;
         dispo = false;

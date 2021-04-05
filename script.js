@@ -64,7 +64,7 @@ function draw(){
         
     }       
 
-DEBUG
+//DEBUG
 function mouseClicked(){
 
     if(dispo == true){

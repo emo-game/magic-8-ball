@@ -30,7 +30,6 @@ function draw(){
     shakeTrue();
 
     if(shaked == true){
-        setTimeout(() => {  console.log("wait"); }, 2000);
         // il se passe un tas de choses géniales
         
         console.log("the shaking occured!");
@@ -86,6 +85,8 @@ function shakeTrue() {
         console.log("shake it shake it up");
         shaked = true;
         dispo = false;
+        setTimeout(() => {  console.log("wait"); }, 2000);
+
     }
 
 

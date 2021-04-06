@@ -30,6 +30,7 @@ function draw(){
     shakeTrue();
 
     if(shaked == true){
+        setTimeout(() => {  console.log("wait"); }, 2000);
         // il se passe un tas de choses géniales
         
         console.log("the shaking occured!");
@@ -41,14 +42,12 @@ function draw(){
             sorciere.style('visibility', 'hidden');
             console.log("androide visible");
             androide.style('visibility', 'visible');
-            setTimeout(() => {  console.log("wait"); }, 2000);
             
         } else if (imgIndex == 1){
             androide.style('visibility', 'hidden');
             sorciere.style('visibility', 'hidden');
             console.log("naif visible");
             naif.style('visibility', 'visible')
-            setTimeout(() => {  console.log("wait"); }, 2000);
         
 
         } else if (imgIndex == 2){
@@ -56,8 +55,6 @@ function draw(){
             naif.style('visibility', 'hidden');
             console.log("sorciere visible");
             sorciere.style('visibility', 'visible');
-            setTimeout(() => {  console.log("wait"); }, 2000);
-
         }
     }
 

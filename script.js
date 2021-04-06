@@ -59,6 +59,8 @@ function draw(){
 
         shaked = false;
         dispo = true;
+        setTimeout(() => {  console.log("wait"); }, 2000);
+
         
     }       
 
@@ -78,7 +80,6 @@ function shakeTrue() {
     x = accelerationX;
     y = accelerationY;
     z = accelerationZ;
-    setTimeout(() => {  console.log("wait"); }, 2000);
 
     
     //console.log(dist(x, y, z, px, py, pz));

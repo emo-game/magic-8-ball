@@ -41,31 +41,23 @@ function draw(){
             sorciere.style('visibility', 'hidden');
             console.log("androide visible");
             androide.style('visibility', 'visible');
-            setTimeout(() => {  console.log("wait"); }, 1000);
-
             
         } else if (imgIndex == 1){
             androide.style('visibility', 'hidden');
             sorciere.style('visibility', 'hidden');
             console.log("naif visible");
             naif.style('visibility', 'visible')
-            setTimeout(() => {  console.log("wait"); }, 1000);
-
-        
 
         } else if (imgIndex == 2){
             androide.style('visibility', 'hidden');
             naif.style('visibility', 'hidden');
             console.log("sorciere visible");
             sorciere.style('visibility', 'visible');
-            setTimeout(() => {  console.log("wait"); }, 1000);
-
         }
     }
 
         shaked = false;
         dispo = true;
-
         
     }       
 

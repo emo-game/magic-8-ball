@@ -41,13 +41,14 @@ function draw(){
             sorciere.style('visibility', 'hidden');
             console.log("androide visible");
             androide.style('visibility', 'visible');
+            setTimeout(() => {  console.log("wait"); }, 2000);
             
         } else if (imgIndex == 1){
             androide.style('visibility', 'hidden');
             sorciere.style('visibility', 'hidden');
             console.log("naif visible");
-            naif.style('visibility', 'visible');
-
+            naif.style('visibility', 'visible')
+            setTimeout(() => {  console.log("wait"); }, 2000);
         
 
         } else if (imgIndex == 2){
@@ -55,6 +56,7 @@ function draw(){
             naif.style('visibility', 'hidden');
             console.log("sorciere visible");
             sorciere.style('visibility', 'visible');
+            setTimeout(() => {  console.log("wait"); }, 2000);
 
         }
     }
@@ -83,7 +85,7 @@ function shakeTrue() {
     
     //console.log(dist(x, y, z, px, py, pz));
 
-    if(dist(x, y, z, px, py, pz) > 40 && dispo == true){
+    if(dist(x, y, z, px, py, pz) > 50 && dispo == true){
         console.log("shake it shake it up");
         shaked = true;
         dispo = false;

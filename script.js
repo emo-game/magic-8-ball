@@ -78,6 +78,8 @@ function shakeTrue() {
     x = accelerationX;
     y = accelerationY;
     z = accelerationZ;
+    setTimeout(() => {  console.log("wait"); }, 2000);
+
     
     //console.log(dist(x, y, z, px, py, pz));
 
@@ -85,8 +87,6 @@ function shakeTrue() {
         console.log("shake it shake it up");
         shaked = true;
         dispo = false;
-        setTimeout(() => {  console.log("wait"); }, 2000);
-
     }
 
 

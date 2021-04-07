@@ -3,7 +3,7 @@ var px, py, pz; // p = precedent
 var dispo; //shake disponible
 var shaked;
 var imgIndex;
-var nombreImages = 3;
+var nombreImages = 2;
 let androide, naif, sorciere;
 
 function setup(){
@@ -34,7 +34,7 @@ function draw(){
         
         console.log("the shaking occured!");
         imgIndex = floor(random(nombreImages));
-        imgIndex = 0;
+        //imgIndex = 0;
 
         if (imgIndex == 0){
             naif.style('visibility', 'hidden');
@@ -42,13 +42,8 @@ function draw(){
             console.log("androide visible");
             androide.style('visibility', 'visible');
             
-        } else if (imgIndex == 1){
-            androide.style('visibility', 'hidden');
-            sorciere.style('visibility', 'hidden');
-            console.log("naif visible");
-            naif.style('visibility', 'visible')
 
-        } else if (imgIndex == 2){
+        } else if (imgIndex == 1){
             androide.style('visibility', 'hidden');
             naif.style('visibility', 'hidden');
             console.log("sorciere visible");

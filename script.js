@@ -34,10 +34,9 @@ function draw(){
         
         console.log("the shaking occured!");
         imgIndex = floor(random(nombreImages));
-        //imgIndex = 0;
+        imgIndex = 0;
 
         if (imgIndex == 0){
-            naif.style('visibility', 'hidden');
             sorciere.style('visibility', 'hidden');
             console.log("androide visible");
             androide.style('visibility', 'visible');
@@ -45,7 +44,6 @@ function draw(){
 
         } else if (imgIndex == 1){
             androide.style('visibility', 'hidden');
-            naif.style('visibility', 'hidden');
             console.log("sorciere visible");
             sorciere.style('visibility', 'visible');
         }
